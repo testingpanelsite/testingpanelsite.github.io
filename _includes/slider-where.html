@@ -1,0 +1,14 @@
+<ul data-orbit=''>
+  {% for slide in site.data.slides-where %}
+    <li>
+      <img src="{{site.url}}/images/{{slide.image}}" />
+      <div class='orbit-caption caption-{{ slide.desc_location }}'>
+        <div class='row'>
+          <div>
+            {{ slide.desc }}
+          </div>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+      <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='{{ site.url }}/css/framework.css' rel='stylesheet'>
+      <link href='{{ site.url }}/css/syntax.css' rel='stylesheet'>
+      <link href='{{ site.url }}/css/style.css' rel='stylesheet'>
+      <link href='{{ site.url }}/css/fontello.css' rel='stylesheet'>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+      <script src='{{ site.url }}/js/modernizr.js'></script>
+<title>
+  {% if page.title %}
+    {{ page.title }}
+  {% else %}
+    Default Page Title
+  {% endif %}
+</title>
+      <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+      {% if page.description %}
+  <meta name="description" content="{{ page.description}}" />
+{% endif %}
+<meta property="og:title" content="{{page.title}}" />
+<meta property="og:type"   content="website" /> 
+<meta property="og:url" content="{{page.url}}" />
+<meta property="og:image" content="http://thetastingpanel.co.za/images/pageimage/{{page.ogimage}}" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-84811065-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '144725009432117'); // Insert your pixel ID here.
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=144725009432117&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+    </head>
+    <body>
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=137946509955031";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <div class='contain-to-grid sticky'>
+        <nav class='top-bar' data-options='sticky_on: large' data-topbar=''>
+          <ul class='title-area'>
+            <li class='name'>
+                <h1><a href='/'><img src='{{site.url}}/images/logo.jpg' width="185"></a></h1>
+            </li>
+            <li class='toggle-topbar menu-icon'>
+              <a href='#'>Menu</a>
+            </li>
+          </ul>
+          <section class='top-bar-section'>
+            <ul class="right">
+              {% for item in site.data.nav %}
+                {% if item.section_id == page.section_id %}
+                  {% assign active_class = "active" %}
+                {% else %}
+                  {% assign active_class = "" %}
+                {% endif %}
+
+                {% if item.children %}
+                  <li class="has-dropdown {{active_class}}">
+                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+                    <ul class='dropdown'>
+                      {% for child in item.children %}
+                        <li>
+                          <a href="{{site.url}}/{{ child.path }}">{{ child.name }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="{{active_class}}">
+                    <a href="{{site.url}}/{{ item.path }}">{{ item.name }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </section>
+        </nav>
+      </div>
+
+
+      {{ content }}
+<div class='full panel-blue no-padding'>
+  <div class='spacing'></div>
+  <div class='row'>
+    <div class='call-to-action light'>
+      <div class='medium-8 large-8 columns'>
+        <div class='spacing'></div>
+        <p class='left'>Find out more about what we do and why we matter.</p>
+      </div>
+      <div class='medium-4 large-4 columns'>
+        <div class='spacing'></div>
+        <a class='button' href='vibrand&tasting-panel-introduction.pdf' target="_blank">Download Overview</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='row bg-7' >
+    <div class='large-6 columns'>
+          <div class='spacing'></div>
+          <h4>Contact Us</h4>
+             <p>Get in contact with us to book a tasting panel or to find out more about what we do. </p>
+             <h5><a href="mailto:info@thetastingpanel.co.za">info@thetastingpanel.co.za</a></h5> 
+</div>
+    <div class='large-6 columns'>
+      <div style="float: right;">
+      <div class='spacing'></div>
+      <h4>Share this page</h4>
+      <div class="socials_big">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fthetastingpanel.co.za&t" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">
+               <i class="icon-facebook orange"></i>
+            </a>
+            <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fthetastingpanel.co.za&text=:%20http%3A%2F%2Fthetastingpanel.co.za" target="_blank" title="Tweet" onclick="window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20' + encodeURIComponent(document.URL)); return false;">
+              <i class="icon-twitter orange"></i>
+            </a>
+            <a href="https://plus.google.com/share?url=http%3A%2F%2Fthetastingpanel.co.za" target="_blank" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=' + encodeURIComponent(document.URL)); return false;">
+              <i class="icon-gplus orange"></i>
+            </a>
+            <a href="mailto:?subject=&body=:%20http%3A%2F%2Fthetastingpanel.co.za" target="_blank" title="Email" onclick="window.open('mailto:?subject=' + encodeURIComponent(document.title) + '&body=' +  encodeURIComponent(document.URL)); return false;">
+              <i class="icon-mail orange"></i>
+            </a>
+            </div>
+          </div>
+          </div>
+</div>
+
+      <div class='footer centered-text'>
+        <div class='spacing'></div>
+        <div class='row'>
+          <div class='large-12 columns'></div>
+          <h3 class='light'>
+            <img src='{{site.url}}/images/logo-grey.png'>
+            <br>
+            <div class='spacing'></div>
+            {{ site.name }}
+          </h3>
+          <h4><a href="mailto:info@thetastingpanel.co.za">info@thetastingpanel.co.za</a></h4>
+          <div class='spacing'></div>
+          <div class='spacing'></div>
+          <p class='copyright'>Copyright 2017 | The Tasting Panel</p>
+        </div>
+      </div>
+
+      <script src='{{ site.url }}/js/jquery.min.js'></script>
+      <script src='{{ site.url }}/js/foundation.min.js'></script>
+      <script src='{{ site.url }}/js/jquery.countTo.js'></script>
+      <script src='{{ site.url }}/js/jquery.appear.js'></script>
+      <script src='{{ site.url }}/js/app.js'></script>
+      <!-- Google Code for Remarketing Tag -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 846866053;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/846866053/?guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+    </body>
+</html>

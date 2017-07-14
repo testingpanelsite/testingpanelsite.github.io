@@ -1,0 +1,122 @@
+---
+layout: default
+title: Our Toolbox
+section_id: our toolbox
+ogimage: tools.jpg
+description: >-
+  Find out more about the specific research tool we use to find out more about
+  what your customers feel about your products.
+services:
+  - - title: Triangle Test
+      icon: chart-pie
+      desc: >-
+        Determines whether or not a perceivable difference exists between 2
+        products, and can be used when a change has been made to the product
+        intrinsics, storage or production methods.  This test is quick and
+        simple but is limited to a yes or no answer – combining it with a
+        descriptive test can identify which product is preferred and why.
+      color: null
+    - title: Paired Comparison
+      icon: cog
+      desc: >-
+        Determines differences between 2 products on specified variables.  This
+        can be used when introducing a new formulation - where the control
+        sample is tested against the new - or to assess your product against
+        your competitors’.
+      color: null
+  - - title: Ranking
+      icon: users
+      desc: >-
+        Determines which products are best liked and most preferred over
+        others.  This is useful when deciding which new flavour, fragrance or
+        formulation to launch, or to assess consumers’ preference for your
+        product versus you competitors’.
+      color: null
+    - title: CATA (Check all that apply)
+      icon: chart-bar
+      desc: >-
+        Determines the main drivers of liking and preference and which
+        attributes negatively or positively influence liking and preference. 
+        This would be added to a ranking test to understand which elements of
+        your product, pack or concept might benefit from tweaking.
+      color: null
+  - - title: JAR (Just about right)
+      icon: tools
+      desc: >-
+        Determines exactly what effect specific attributes have on overall
+        liking.  A 5 point scale ranging from “too little” to “too much”, with
+        “Just about right” in the middle, is applied to specific attributes.  
+        This allows us to do a <strong>penalty drop analysis</strong> where we
+        look at ‘too little’ and ‘too much’ mentions to find significant
+        influences of these on overall liking and identify potential problem
+        areas and areas of possible improvement.
+      color: null
+    - title: PCA (Principal Component Analysis)
+      icon: chart-line
+      desc: >-
+        Identifies the correlations between variables / attributes. The basic
+        question it would answer is  “Which of these products have similar
+        profiles and which attributes correlate most strongly with which
+        products?” modelling methods such as linear regression, logistic
+        regression or discriminant analysis are used to help us visualise
+        observations in a 2- or 3-dimensional space in order to identify
+        profiles of attributes and match these with products.
+      color: null
+published: true
+---
+
+
+<div class='full_content_page bg-7' >
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-users'></i>
+      <h2>Our Toolbox</h2>
+      <p>Tools for every research job</p>
+      <p class='shortline'></p>
+    </div>
+    <div class='spacing'></div>
+    <div class='spacing'></div>
+  </div>
+</div>
+<div class='full_content_page ' style='background: #ffffff' >
+  <div class='row'>
+     <div class='medium-3 large-3 columns'>
+       <div class='spacing'></div>
+    </div>
+    <div class='medium-6 large-6 columns main_content'>
+      <p>The Tasting Panel uses a wide array of sensory analysis techniques and methodologies, with a range of statistical tools to draw on - and we customise the tools we use depending on the job at hand. We aim to combat respondent fatigue through questionnaires that are as simple as possible, while still allowing for the necessary post-panel statistical analysis.</p>
+      <p>Once the data has been collected, it is run through our ‘best in class’ statistical software programme.  Here, we take a simplicity is best approach– showing the hard stats as an appendix in reports and focusing the body of the report on findings, statistical differences and recommendations.  If, though, your team is familiar with the ‘hard stats’ – we talk that language too!</p>
+
+      <p>There are three key types of testing we offer:</p>
+      <p><ul>
+      <li><strong>Difference:</strong> (Sensory discrimination) to determine whether there are detectable differences between products</li>
+      <li><strong>Descriptive:</strong> to provide information on selected characteristics</li>
+      <li><strong>Affective:</strong> to assess subjective attitude to a product, acceptability or preference. (Follows discriminative or descriptive testing.)</li>
+      </ul></p>
+    </div>
+    <div class='row'>
+    <div class='spacing'></div>
+    <div class='spacing'></div>
+  </div>
+    <div class='medium-3 large-3 columns'>
+       <div class='spacing'></div>
+    </div>
+  </div>
+ {% for row in page.services %}
+    <div class="row">
+      {% for service in row %}
+        <div class='medium-6 large-6 columns icon-text'>
+          <i class='icon-{{service.icon}} {{service.color}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
+</div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+- name: Home
+  path: index.html
+  section_id: home
+- name: How we work
+  path: how-we-work.html
+  section_id: how we work
+- name: Where we work
+  path: where-we-work.html
+  section_id: where we work
+- name: Our Toolbox
+  path: our-toolbox.html
+  section_id: our toolbox
+- name: Contact Us
+  path: contact-us.html
+  section_id: contact us

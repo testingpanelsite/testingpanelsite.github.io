@@ -1,1 +1,1 @@
-# testingpanelsite.github.io
+# tastingpanel.github.io
