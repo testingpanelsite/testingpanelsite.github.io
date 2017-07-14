@@ -1,14 +1,14 @@
 - image: slider/dinner-party.jpg
   desc_location: right
   desc:
-    <h2>Real Life Research</h2></br>
+    <h2>Perfect your product</h2></br>
     <p class="heading_p">Product testing in natural enviroments</p>
     <div class='two spacing'></div>
     <a href="where-we-work.html" class='button boxed_dark'>Where we work</a>
 - image: slider/group_eat.jpg
   desc_location: left
   desc:
-    <h2>Understand your Customers</h2></br>
+    <h2>Perfect your product</h2></br>
     <p class="heading_p">Find out what they love about your products</p>
     <div class='two spacing'></div>
     <a href="how-we-work.html" class='button boxed_dark'>How we work</a>
