@@ -2,20 +2,34 @@
   desc_location: right
   desc:
     <h2>Perfect your product</h2></br>
-    <p class="heading_p">Product testing in natural enviroments</p>
+    <p class="heading_p">Packaging, Branding & Concept Testing</p>
     <div class='two spacing'></div>
     <a href="where-we-work.html" class='button boxed_dark'>Where we work</a>
 - image: slider/group_eat.jpg
   desc_location: left
   desc:
     <h2>Perfect your product</h2></br>
-    <p class="heading_p">Find out what they love about your products</p>
+    <p class="heading_p">Product Formulation Testing</p>
     <div class='two spacing'></div>
     <a href="how-we-work.html" class='button boxed_dark'>How we work</a>
 - image: slider/products.jpg
   desc_location: left
   desc:
     <h2>Perfect your product</h2></br>
-    <p class="heading_p">Research the finest details about your product</p>
+    <p class="heading_p">Product Performance Testing</p>
     <div class='two spacing'></div>
     <a href="our-toolbox.html" class='button boxed'>View our Toolbox</a>
+- image: slider/products.jpg
+  desc_location: left
+  desc:
+    <h2>Perfect your product</h2></br>
+    <p class="heading_p">Preference Claims</p>
+    <div class='two spacing'></div>
+    <a href="our-toolbox.html" class='button boxed'>View our Toolbox</a>
+- image: slider/products.jpg
+  desc_location: left
+  desc:
+    <h2>Perfect your product</h2></br>
+    <p class="heading_p">Product Usage</p>
+    <div class='two spacing'></div>
+    <a href="our-toolbox.html" class='button boxed'>View our Toolbox</a>    
