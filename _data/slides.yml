@@ -1,11 +1,11 @@
-- image: slider/shop.jpg
+- image: slider/aisle.jpg
   desc_location: right
   desc:
     <h2>Perfect your product</h2></br>
     <p class="heading_p">Packaging, Branding & Concept Testing</p>
     <div class='two spacing'></div>
     <a href="where-we-work.html" class='button dark-boxed'><strong>Where we work</strong></a>
-- image: slider/aisle.jpg
+- image: slider/tea.jpg
   desc_location: left
   desc:
     <h2>Perfect your product</h2></br>
@@ -19,14 +19,14 @@
     <p class="heading_p">Product Performance Testing</p>
     <div class='two spacing'></div>
     <a href="our-toolbox.html" class='button dark-boxed'><strong>View our Toolbox</strong></a>
-- image: slider/cupcakes.jpg
+- image: slider/dishwashing.jpg
   desc_location: right
   desc:
     <h2>Perfect your product</h2></br>
     <p class="heading_p">Preference Claims</p>
     <div class='two spacing'></div>
       <a href="contact-us.html" class='button dark-boxed'><strong>Contact Us</strong></a>    
-- image: slider/dishwashing.jpg
+- image: slider/burger2.jpg
   desc_location: left
   desc:
     <h2>Perfect your product</h2></br>
