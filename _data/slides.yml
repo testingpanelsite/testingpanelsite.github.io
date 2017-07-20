@@ -5,7 +5,7 @@
     <p class="heading_p">Packaging, Branding & Concept Testing</p>
     <div class='two spacing'></div>
     <a href="where-we-work.html" class='button dark-boxed'><strong>Where we work</strong></a>
-- image: slider/tea.jpg
+- image: slider/aisle.jpg
   desc_location: left
   desc:
     <h2>Perfect your product</h2></br>
@@ -26,7 +26,7 @@
     <p class="heading_p">Preference Claims</p>
     <div class='two spacing'></div>
       <a href="contact-us.html" class='button dark-boxed'><strong>Contact Us</strong></a>    
-- image: slider/phone.jpg
+- image: slider/dishwashing.jpg
   desc_location: left
   desc:
     <h2>Perfect your product</h2></br>
