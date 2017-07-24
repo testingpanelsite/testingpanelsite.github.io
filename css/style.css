@@ -300,7 +300,7 @@ h1, h2, h3, h4 {
   padding: 0;
   position: relative;
   -webkit-transform: translateZ(0);
-  height: 180px!important;
+  height: 105px!important;
 }
 .orbit-caption a { 
 display: none;
