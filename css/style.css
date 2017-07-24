@@ -302,6 +302,9 @@ h1, h2, h3, h4 {
   -webkit-transform: translateZ(0);
   height: 180px!important;
 }
+.orbit-caption a { 
+display: none;
+}
   }
 
 /*milestone */
